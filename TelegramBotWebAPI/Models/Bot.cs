@@ -18,7 +18,7 @@ namespace TelegramBotWebAPI.Models
         public static List<int> AwaitingUsers = new List<int>();
 
         /// <summary>
-        /// Возвращает список комманд бота.
+        /// Возвращает список команд бота.
         /// </summary>
         public static IReadOnlyCollection<Command> Commands
         {
@@ -36,7 +36,7 @@ namespace TelegramBotWebAPI.Models
             if (_botClient != null)
                 return _botClient;
 
-            //инициализация комманд
+            //инициализация команд
             _commandList = new List<Command>();
             _commandList.Add(new HelloCommand());
             _commandList.Add(new AddCommand());
